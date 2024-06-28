@@ -1,0 +1,46 @@
+#gameContainer{
+    text-align: center;
+    background: rgb(5, 5, 37);
+    /* display: flex; */
+}
+.info{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    max-width: 400px;
+    line-height: 40px;
+}
+li{
+    list-style: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+ul{
+    gap: 30px;
+}
+a{
+    text-decoration: underline;
+    color: inherit;
+}
+body{
+    background: rgb(5, 5, 37);
+    display: flex;
+    gap: 20px;
+}
+#gameBoard{
+    border: 3px solid;
+    background: yellow;
+}
+#scoreText{
+    font-size: 30px;
+    color: yellow;
+    font-family: "Permanent Marker";
+}
+#resetBtn{
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    background: #fff;
+}
