@@ -28,3 +28,6 @@
 - <img src="/demo/Demo.png">
 - Demo Gif
 - <img src="/demo/Snake - Game - Google Chrome 2024-06-29 02-42-33_1_1.gif">
+
+# Added a step by step guide also in demo folder to run the program
+-howToRun.mhtml
