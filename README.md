@@ -25,9 +25,18 @@
 
 # Demo 
  - Demo image
-<img src="assets/Demo/Demo.png">
+<img src="assets/demo/Demo.png">
 
  - Demo Gif
 <img src="assets/demo/Game-working.gif">
 
+# Contact Details
 
+- Email
+``` amanrajpoot5612@gmail.com ```
+
+- Linkedin
+<a href = "https://www.linkedin.com/in/amanrajpoot5612/">``` linkedin.com/amanrajpoot5612```</a>
+
+- Portfolio
+<a href = "https://amanrajpoot.vercel.app/"> ``` Portfolio/Aman``` </a>
