@@ -23,11 +23,11 @@
 - Code  with Harry youtube channel
 - Stackoverflow
 
-#Demo 
-- Demo image
-- <img src="/demo/Demo.png">
-- Demo Gif
-- <img src="/demo/Snake - Game - Google Chrome 2024-06-29 02-42-33_1_1.gif">
+# Demo 
+ - Demo image
+<img src="assets/Demo/Demo.png">
 
-# Added a step by step guide also in demo folder to run the program
--howToRun.mhtml
+ - Demo Gif
+<img src="assets/demo/Game-working.gif">
+
+

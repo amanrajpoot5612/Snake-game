@@ -12,6 +12,7 @@ const resetBtn = document.querySelector("#resetBtn");
 const gameWidth = gameBoard.width;
 const gameHeight = gameBoard.height;
 const boardBackground = "yellow";
+let foodDrawCount = 0;
 const snakeColor = "brown";
 const snakeBorder = "black";
 const foodColor = "red";
@@ -78,6 +79,12 @@ function createFood(){
     }
     foodX = randomFood(0, gameWidth - unitSize);
     foodY = randomFood(0, gameWidth - unitSize);
+    foodDrawCount++;
+
+    if (foodDrawCount > 1) {
+        Food.currentTime = 0; // rewind sound
+        Food.play();
+    }
 }
 function drawFood(){
     ctx.fillStyle = foodColor;
@@ -125,21 +132,25 @@ function changeDirection(event){
         case(keyPressed == LEFT && !goingRight):
         xVelocity = -unitSize;
         yVelocity = 0;
+        Move.play()
         break;
 
         case(keyPressed == RIGHT && !goingLeft):
         xVelocity = unitSize;
         yVelocity = 0;
+        Move.play()
         break;
 
         case(keyPressed == UP && !goingDown):
         xVelocity = 0;
         yVelocity = -unitSize;
+        Move.play()
         break;
 
         case(keyPressed == DOWN && !goingUp):
         xVelocity = 0;
         yVelocity = unitSize;
+        Move.play()
         break;
     }
 }
@@ -166,6 +177,7 @@ function checkGameOver(){
 }
 function displayGameOver(){
     ctx.font = "50px Roboto"
+    Over.play();
     ctx.fillStyle = "red";
     ctx.textAlign = "center";
     ctx.fillText("GAME OVER", gameWidth/2, gameHeight/2);
